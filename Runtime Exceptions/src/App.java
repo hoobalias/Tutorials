@@ -1,0 +1,14 @@
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		//int value = 7;
+		//value = value/0;
+		
+		int[] array = {1,2,3};
+		System.out.println(array[3]);
+
+	}
+
+}

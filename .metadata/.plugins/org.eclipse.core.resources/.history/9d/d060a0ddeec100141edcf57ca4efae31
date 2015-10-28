@@ -1,0 +1,15 @@
+
+public class Car extends Machine {
+
+	public void start() {
+		
+		System.out.println("Car started.");
+	}
+
+	public void wipe() {
+		System.out.println("Wipe windshield.");
+	}
+	
+	
+	
+}

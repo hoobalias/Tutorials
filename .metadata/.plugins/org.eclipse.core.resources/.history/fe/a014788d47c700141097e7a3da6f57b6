@@ -1,0 +1,51 @@
+public class Node {
+	Node left;
+	Node right;
+	int data;
+	
+	public Node(int data) {
+		this.data = data;
+	}
+}
+
+public class TreeTest {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+	
+	public Node fCA(Node root, Node n1, Node n2) {
+		if (root == null) {
+			return null;
+		}
+		if (root.data == n1.data) {
+			return root;
+		}
+		if (root.data == n2.data) {
+			return root;
+		}
+		if (isAnc(root.left, n1) && isAnc(root.left, n2)) {
+			return fCA(root.left, n1, n2);
+		}
+		if (isAnc(root.right, n1) && isAnc(root.right, n2)) {
+			return fCA(root.right, n1, n2);
+		}
+		return root;
+		
+	}
+
+	private boolean isAnc(Node root, Node n) {
+		if (root == null) {
+			return false;
+		}
+		if (root.data == n.data) {
+			return true;
+		}
+		
+		return isAnc(root.left, n) || isAnc(root.right, n);
+	}
+
+}

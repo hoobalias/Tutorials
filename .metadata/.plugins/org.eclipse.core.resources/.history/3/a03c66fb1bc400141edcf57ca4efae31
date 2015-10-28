@@ -1,0 +1,27 @@
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+
+public class AppSortedMap {
+
+	public static void main(String[] args) {
+		
+		HashMap<Integer, String> map = new HashMap<>();
+		
+		LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<>();
+		
+		TreeMap<Integer, String> treeMap = new TreeMap<>();
+	}
+
+	public static void testMap(Map<Integer, String> map) {
+		
+		map.put(9, "nine");
+		map.put(1, "one");
+		map.put(3, "three");
+		map.put(10, "ten");
+		map.put(5, "five");
+		
+	}
+}

@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class AppSortedLists {
+
+	public static void main(String[] args) {
+		
+		List<String> animals = new ArrayList<>();
+		
+		animals.add("zebra");
+		animals.add("cat");
+		animals.add("dog");
+		animals.add("mouse");
+		animals.add("lion");
+		
+		Collections.sort(animals);
+		
+		for(String animal: animals) {
+			System.out.println(animal);
+		}
+		
+		
+
+	}
+
+}

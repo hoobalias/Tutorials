@@ -1,0 +1,62 @@
+
+public class Test {
+    public static void main(String [] args) {
+//        System.out.println(reverseString("Howdy"));
+//        System.out.println(isSquare(4));
+//        System.out.println(isSquare(11));
+//        System.out.println(isSquare(0));
+//        System.out.println(isUnique("asgflhgdfo"));
+//        System.out.println(isUnique("asdfghjkl"));
+    	System.out.println(removeDupes("aabbccddee"));
+    	System.out.println(removeDupes("dogmeat"));
+    }
+    
+    public static String removeDupes(String input) {
+    	StringBuilder output = new StringBuilder();
+    	for (int i=0;i < input.length();i++) {
+    		String temp1 = new String(input.charAt(i)+"");
+    		if (output.indexOf(temp1) == -1) {
+    			output.append(input.charAt(i));
+    		}
+    	}
+    	return output.toString();
+    }
+    
+	public static String reverseString(String str) {
+		char[] charArray = str.toCharArray();
+		int lastIndex = str.length() - 1;
+		for (int i=0;i<str.length()/2;i++) {
+			char temp = charArray[i];
+			charArray[i] = charArray[lastIndex-i];
+			charArray[lastIndex-i] = temp;
+		}
+		String reversed = new String(charArray);
+		return reversed;
+	}
+	
+	public static boolean isSquare(int input) {
+		int a = 0;
+		while(true) {
+			if (a*a == input) {
+				return true;
+			}
+			else if (a*a > input){
+				return false;
+			}
+			a++;
+		}
+	}
+	
+	public static boolean isUnique(String input) {
+		boolean[] ascii = new boolean[257];
+		for (int i=0;i<input.length();i++) {
+			if (ascii[input.charAt(i)] == false) {
+				ascii[input.charAt(i)] = true;
+			}
+			else {
+				return false;
+			}
+		}
+		return true;
+	}
+}

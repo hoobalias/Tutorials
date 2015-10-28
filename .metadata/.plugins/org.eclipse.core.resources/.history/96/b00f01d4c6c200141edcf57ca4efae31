@@ -1,0 +1,16 @@
+import java.io.File;
+
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		String fileName = "C:\\Users\\SD186018.TD\\Desktop";
+	
+		File textFile = new File(fileName);
+		
+		Scanner in = new Scanner(textFile);
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+import java.util.Queue;
+import java.util.concurrent.ArrayBlockingQueue;
+
+
+public class AppQ {
+
+	public static void main(String[] args) {
+		
+		// (head) <- ooooooooooooo <- (tail) FIFO
+		
+		Queue<Integer> queue = new ArrayBlockingQueue<>(3); //Fixed size
+
+	}
+
+}

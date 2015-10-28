@@ -1,0 +1,16 @@
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		int value = 4;
+		
+		System.out.println(factorial(value));
+	}
+	
+	private static int factorial (int value) {
+		
+		factorial(value * (value-1));
+	}
+
+}

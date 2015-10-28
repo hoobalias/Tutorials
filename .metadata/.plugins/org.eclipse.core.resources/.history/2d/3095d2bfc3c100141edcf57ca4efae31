@@ -1,0 +1,17 @@
+class Robot {
+	public void speak() {
+		System.out.println("Beep boop beep");
+	}
+}
+
+
+public class App2 {
+
+	public static void main(String[] args) {
+		
+		Robot one = new Robot();
+		one.speak();
+
+	}
+
+}

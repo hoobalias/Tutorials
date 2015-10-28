@@ -1,0 +1,8 @@
+
+public enum Animal {
+	CAT("Felix"), DOG("Rex"), RABBIT("Bugs");
+	
+	Animal(String name) {
+		
+	}
+}

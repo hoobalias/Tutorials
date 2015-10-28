@@ -1,0 +1,8 @@
+
+public class Person {
+
+	public void greet() {
+		System.out.println("Machine started.");
+	}
+	
+}

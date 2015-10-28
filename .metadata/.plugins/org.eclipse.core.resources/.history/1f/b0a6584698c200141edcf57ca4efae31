@@ -1,0 +1,19 @@
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Plant plant = new Plant();
+		Tree tree = new Tree();
+		
+		Plant plant1 = new Tree();
+		
+		Plant plant2 = plant1;
+		
+		//Tree tree2 = new Plant();
+		
+		
+
+	}
+
+}

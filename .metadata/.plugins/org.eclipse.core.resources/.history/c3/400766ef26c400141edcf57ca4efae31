@@ -1,0 +1,10 @@
+
+public class AppQ {
+
+	public static void main(String[] args) {
+		
+		// (head) <- ooooooooooooo <- (tail) FIFO
+
+	}
+
+}

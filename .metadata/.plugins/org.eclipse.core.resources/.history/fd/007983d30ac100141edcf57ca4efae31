@@ -1,0 +1,28 @@
+
+class Person {
+	String name;
+	int age;
+	
+	void speak() {
+		System.out.println("My name is " + name + " and I am " + age + " years old!");
+	}
+}
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Person person1 = new Person();
+		person1.name = "John";
+		person1.age = 20;
+		
+		Person person2 = new Person();
+		person2.name = "Amy";
+		person2.age = 30;
+		
+		person1.speak();
+		person2.speak();
+
+	}
+
+}

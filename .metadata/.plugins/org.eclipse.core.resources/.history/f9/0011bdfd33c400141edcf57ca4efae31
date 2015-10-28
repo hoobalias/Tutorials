@@ -1,0 +1,19 @@
+package datastructures;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		public static String[] vehicles = {
+			"ambulance", "helicopter", "lifeboat"
+		};
+		
+		public static String[][] drivers = {
+			{"Fred", "Sue", "Pete"},
+			{"Sue", "Richard", "Bob", "Fred"},
+			{"Pete", "Mary", "Bob"},
+		};
+
+	}
+
+}

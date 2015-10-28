@@ -1,0 +1,35 @@
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class AppHM {
+
+	public static void main(String[] args) {
+		
+		HashMap<Integer, String> map = new HashMap<>();
+
+		map.put(5, "five");
+		map.put(4, "four");
+		map.put(1, "one");
+		map.put(2, "two");
+		
+		String text = map.get(5);
+		System.out.println(text);
+		
+		String text2 = map.get(6);
+		System.out.println(text2);
+		
+		map.put(5, "dupe");
+		String text3 = map.get(5);
+		System.out.println(text3);
+		
+		for(Map<Integer, String>.Entry<Integer, String, V> entry: map.entrySet()) {
+			int key = entry.getKey();
+			String value = entry.getValue();
+			
+			System.out.println(key + ": " + value);
+		}
+		
+	}
+
+}
